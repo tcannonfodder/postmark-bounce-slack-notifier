@@ -21,7 +21,7 @@ module SlackNotifierHelpers
           type: "section",
           text: {
             type: "mrkdwn",
-            text: "*Bounced At*: <!date^1392734382^Posted {date_num} {time_secs}|2023-02-27T21:41:30Z> (`2023-02-27T21:41:30Z`)"
+            text: "*Bounced At*: <!date^1392734382^{date_num} {time_secs}|2023-02-27T21:41:30Z> (`2023-02-27T21:41:30Z`)"
           }
         },
         {
@@ -31,7 +31,7 @@ module SlackNotifierHelpers
           type: "section",
           text: {
             type: "mrkdwn",
-            text: "*From*: notifications@honeybadger.io\n*Webhook Type*: SpamNotification (`512`)\n*Description*: Message Description Here\n"
+            text: "*From*: notifications@honeybadger.io\n*Webhook Type*: `SpamNotification` (`512`)\n*Description*: Message Description Here\n"
           }
         }
       ]
