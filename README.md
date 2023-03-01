@@ -20,3 +20,17 @@ cp .env.example .env
 
 After that, you'll need to replace the `SLACK_WEBHOOK_URL` in `.env` with your own webhook URL
 
+## Running the demo app
+
+To test the webhook, there is a demo Sinatra app (`app.rb`), which:
+
+- Checks for the `SLACK_WEBHOOK_URL` ENV variable, failing to boot if it's missing
+- Provides an easy-to-use interface for sending out sample payloads to your Slack webhook
+
+To start it, run:
+
+```sh
+bundle exec ruby app.rb
+```
+
+The demo app should not be available at [http://127.0.0.1:4567](http://127.0.0.1:4567) (your ports may vary, though)
