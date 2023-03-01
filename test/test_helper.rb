@@ -6,6 +6,8 @@ SimpleCov.start do
 end
 
 
+require_relative 'test_helper/declarative_test_patch'
+
 $LOAD_PATH.unshift File.expand_path("../lib", __dir__)
 
 require "minitest/autorun"
