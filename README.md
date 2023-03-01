@@ -35,7 +35,7 @@ bundle exec rake demo
 
 (which is really just a shortcut of `bundle exec ruby app.rb`)
 
-The demo payloads should not be available at (your ports may vary, though):
+The demo payloads should be available at (your ports may vary, though):
 
 * Spam Notification: [http://127.0.0.1:4567/spam-notification](http://127.0.0.1:4567/spam-notification)
 * Spam Complaint: [http://127.0.0.1:4567/spam-complaint](http://127.0.0.1:4567/spam-complaint)
