@@ -8,6 +8,7 @@ group :test, :development do
 end
 
 group :development do
+  gem 'dotenv', require: 'dotenv/load'
   gem 'rack', '~> 2.2.4'
   gem 'sinatra'
   gem 'puma'
