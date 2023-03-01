@@ -14,6 +14,8 @@ group :development do
 end
 
 group :test do
+  gem "m"
   gem 'minitest'
   gem 'simplecov'
+  gem 'webmock'
 end

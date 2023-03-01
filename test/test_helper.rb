@@ -5,6 +5,10 @@ SimpleCov.start do
   add_filter "/test/"
 end
 
+require 'httpx'
+require "httpx/adapters/webmock"
+require 'webmock/minitest'
+WebMock.enable!
 
 require_relative 'test_helper/declarative_test_patch'
 
