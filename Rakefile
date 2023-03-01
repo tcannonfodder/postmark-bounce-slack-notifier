@@ -9,3 +9,8 @@ Rake::TestTask.new(:test) do |t|
 end
 
 task default: %i[test]
+
+desc "Run the demo Sintara app"
+task :demo do
+  ruby "app.rb"
+end

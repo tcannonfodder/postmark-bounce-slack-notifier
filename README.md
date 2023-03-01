@@ -30,7 +30,9 @@ To test the webhook, there is a demo Sinatra app (`app.rb`), which:
 To start it, run:
 
 ```sh
-bundle exec ruby app.rb
+bundle exec rake demo
 ```
+
+(which is really just a shortcut of `bundle exec ruby app.rb`)
 
 The demo app should not be available at [http://127.0.0.1:4567](http://127.0.0.1:4567) (your ports may vary, though)

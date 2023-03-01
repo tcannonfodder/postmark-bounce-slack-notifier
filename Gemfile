@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'httpx'
 
 group :test, :development do
+  gem "rake"
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end
 

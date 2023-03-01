@@ -20,6 +20,7 @@ GEM
     rack (2.2.6.2)
     rack-protection (3.0.5)
       rack
+    rake (13.0.6)
     reline (0.3.2)
       io-console (~> 0.5)
     ruby2_keywords (0.0.5)
@@ -45,6 +46,7 @@ DEPENDENCIES
   minitest
   puma
   rack (~> 2.2.4)
+  rake
   simplecov
   sinatra
 
