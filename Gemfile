@@ -18,4 +18,5 @@ group :test do
   gem 'minitest'
   gem 'simplecov'
   gem 'webmock'
+  gem 'mocha'
 end
