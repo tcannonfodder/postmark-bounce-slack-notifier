@@ -17,4 +17,5 @@ require_relative 'test_helper/declarative_test_patch'
 $LOAD_PATH.unshift File.expand_path("../lib", __dir__)
 
 require 'slack_notifier'
+require 'postmark_bounce_spam_notifier'
 require "minitest/autorun"
