@@ -1,10 +1,10 @@
 require "test_helper"
-require_relative 'test_helper/postmark_bounce_notifier_helpers'
+require_relative 'test_helper/postmark_bounce_spam_notifier_helpers'
 require_relative 'test_helper/slack_notifier_helpers'
 
 
 class PostmarkBounceSpamNotifierTest < Minitest::Test
-  include PostmarkBounceNotifierHelpers
+  include PostmarkBounceSpamNotifierHelpers
   include SlackNotifierHelpers
   test "build_message: builds a Block Kit payload from the given Postmark SpamNotification payload" do
     bounced_at = Time.parse("2023-02-27T21:41:30Z")

@@ -1,4 +1,4 @@
-module PostmarkBounceNotifierHelpers
+module PostmarkBounceSpamNotifierHelpers
   def dummy_spam_notification_payload
     return <<~JSON
       {"RecordType":"Bounce","Type":"SpamNotification","TypeCode":512,"Name":"Spam notification","Tag":"","MessageStream":"outbound","Description":"The message was delivered, but was either blocked by the user, or classified as spam, bulk mail, or had rejected content.","Email":"zaphod@example.com","From":"notifications@honeybadger.io","BouncedAt":"2023-02-27T21:41:30Z"}
