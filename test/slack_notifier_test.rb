@@ -61,7 +61,7 @@ class SlackNotifierTest < Minitest::Test
 
     client = SlackNotifier.new(webhook_url: webhook_url)
 
-    response = client.post_message(payload)
+    client.post_message(payload)
     assert_requested(stub, times: 4)
   end
 
@@ -108,7 +108,7 @@ class SlackNotifierTest < Minitest::Test
     client = SlackNotifier.new(webhook_url: webhook_url)
 
     assert_raises ArgumentError do
-      response = client.post_message(dummy_successful_payload.to_json)
+      client.post_message(dummy_successful_payload.to_json)
     end
   end
 end
