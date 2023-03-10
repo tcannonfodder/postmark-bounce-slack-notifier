@@ -52,3 +52,17 @@ get '/hard-bounce' do
     raise ArgumentError, "response should be nil: #{response.inspect}"
   end
 end
+
+post '/payload' do
+  payload = JSON.parse(request.body.read)
+  response = process_webhook(payload: payload)
+
+  if response.nil?
+    "Nothing sent!"
+  else
+    return <<~TEXT
+      Response Code: #{response.status}
+      Response Body: #{response.body.to_s}
+    TEXT
+  end
+end

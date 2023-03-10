@@ -40,3 +40,5 @@ The demo payloads should be available at (your ports may vary, though):
 * Spam Notification: [http://127.0.0.1:4567/spam-notification](http://127.0.0.1:4567/spam-notification)
 * Spam Complaint: [http://127.0.0.1:4567/spam-complaint](http://127.0.0.1:4567/spam-complaint)
 * Hard Bounce: [http://127.0.0.1:4567/hard-bounce](http://127.0.0.1:4567/hard-bounce)
+
+You can also `POST` payloads directly to `http://127.0.0.1:4567/payload`
